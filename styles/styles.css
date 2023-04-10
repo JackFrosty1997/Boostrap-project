@@ -54,3 +54,6 @@ btn:focus, a:focus {
     outline: none !important;
     box-shadow: none;
 }
+.featured_tabs .nav-link.active {
+    border-bottom: 4px solid var(--soft-red) !important;
+}
