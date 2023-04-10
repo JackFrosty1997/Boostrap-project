@@ -65,7 +65,12 @@ btn:focus, a:focus {
     height: 100px;
     object-fit: contain;
 }
-@media ((min-width: 768px)) {
+@media (min-width:992px) {
+    .w-lg-75 {
+        width: 75% !important;
+    }
+}
+@media (min-width: 768px) {
     .content-section {
         padding-top:7rem;
         padding-bottom:7rem;
