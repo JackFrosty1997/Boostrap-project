@@ -16,18 +16,18 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navmenu">
-            <ul class="navbar-nav ms-auto gap-lg-4 gap-3 text-uppercase">
+            <ul class="navbar-nav ms-auto gap-lg-4 gap-3 text-uppercase text-center text-md-start">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Features</a>
+                    <a href="#features" class="nav-link">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Pricing</a>
+                    <a href="#download" class="nav-link">Download</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#faqs" class="nav-link">FAQs</a>
                 </li>
             </ul>       
-            <button class="btn red-btn rounded-3 ms-lg-5 fw-medium text-white text-uppercase px-4 py-2">Login</button> 
+            <button class="btn w-md-auto w-100 red-btn rounded-3 ms-lg-5 fw-medium text-white text-uppercase px-4 py-2 mt-2 mt-lg-0">Login</button> 
         </div>
     </div>
     </nav>
@@ -44,13 +44,13 @@
         <img class="img-fluid" src="images/illustration-hero.svg" alt="Hero Banner">
         </div>
     </div>
-    <section class="mt-5 pt-5">
+    <section id="features" class="content-section">
     <div class="container">
         <div class="w-55 m-auto text-center">
             <h2 class="mb-4">Features</h2>
             <p class="fs-5 mb-5">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
-        <ul class="nav nav-tabs justify-content-center mb-5 featured_tabs" id="myTab" role="tablist">
+        <ul class="nav nav-tabs justify-content-center mb-5 featured_tabs gap-0 gap-md-4 flex-column flex-md-row align-items-center align-items-md-start" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
             <button class="nav-link p-4 fw-medium border-0 active" id="simple-tab" data-bs-toggle="tab" data-bs-target="#simple" type="button" role="tab" aria-controls="simple" aria-selected="true">Simple Bookmarking</button>
             </li>
@@ -61,7 +61,7 @@
             <button class="nav-link p-4 fw-medium border-0" id="easy-tab" data-bs-toggle="tab" data-bs-target="#easy" type="button" role="tab" aria-controls="easy" aria-selected="false">Easy Sharing</button>
             </li>
         </ul>
-        <div class="tab-content text-center text-lg-start pt-4" id="myTabContent">
+        <div class="tab-content text-center text-lg-start pt-2 pt-md-4" id="myTabContent">
             <div class="tab-pane fade show active" id="simple" role="tabpanel" aria-labelledby="simple-tab">
                 <div class="row gap-5 align-items-center flex-column flex-lg-row">
                     <div class="col px-lg-0">
@@ -101,8 +101,49 @@
         </div>
     </div>
 </section>
-    <!--
-    <div class="container">
+<section id="download" class="content-section">
+<div class="container">
+    <div class="w-55 m-auto text-center">
+        <h2 class="mb-4">Download the extension</h2>
+        <p class="fs-5 mb-5">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+    </div>
+    <div class="card-group">
+        <div class="card border-0">
+            <img src="images/logo-chrome.svg" class="w-auto dl-image" alt="Chrome">
+            <div class="card-body text-center">
+            <h5 class="card-title">Add to Chrome</h5>
+            <p class="card-text">Minimum version 62</p>
+            <img src="images/bg-dots.svg" alt="Dots">
+            <a href="#" class="btn blue-btn d-block fw-medium text-white py-3 px-5">Add &amp; Install Extension</a>
+            </div>
+        </div>
+        <div class="card border-0">
+            <img src="images/logo-firefox.svg" class="w-auto dl-image" alt="Firefox">
+            <div class="card-body text-center">
+            <h5 class="card-title">Add to Firefox</h5>
+            <p class="card-text">Minimum version 55</p>
+            <img src="images/bg-dots.svg" alt="Dots">
+            <a href="#" class="btn blue-btn d-block fw-medium text-white py-3 px-5">Add &amp; Install Extension</a>
+            </div>
+        </div>
+        <div class="card border-0">
+            <img src="images/logo-opera.svg" class="w-auto dl-image" alt="Opera">
+            <div class="card-body text-center">
+                <h5 class="card-title">Add to Opera</h5>
+                <p class="card-text">Minimum version 46</p>
+                <img src="images/bg-dots.svg" alt="Dots">
+                <a href="#" class="btn blue-btn d-block fw-medium text-white py-3 px-5">Add &amp; Install Extension</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+<section id="faqs" class="content-section">
+    <div class="container w-55 m-auto">
+        <div class="text-center">
+            <h2 class="mb-4">Frequently Asked Questions</h2>
+            <p class="fs-5 mb-5">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+        </div>
     <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
@@ -137,7 +178,7 @@
       </div>
       <a class="btn btn-blue d-block d-md-inline-block fw-medium text-white py-3 px-5 mt-5" href="#">More info</a>
       </div>
-      -->
+    </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -13,8 +13,12 @@ body {
     font: 1rem / 1.5 'Rubik', sans-serif;
 }
 /* Custom Utilities */
+.content-section {
+    padding-top:5rem;
+    padding-bottom: 5rem;
+}
 .w-55 {
-    width:55%;
+    width:100%;
 }
 .w-87 {
     width: 87%;
@@ -56,4 +60,21 @@ btn:focus, a:focus {
 }
 .featured_tabs .nav-link.active {
     border-bottom: 4px solid var(--soft-red) !important;
+}
+.dl-image {
+    height: 100px;
+    object-fit: contain;
+}
+@media ((min-width: 768px)) {
+    .content-section {
+        padding-top:7rem;
+        padding-bottom:7rem;
+    }
+    .w-md-auto {
+        width: auto !important;
+    }
+    .w-55 {
+        width:55%;
+    }
+    
 }
