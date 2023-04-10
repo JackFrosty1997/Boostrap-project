@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+:root {
+/* Primary */
+--soft-blue:hsl(231, 69%, 60%);
+--soft-red: hsl(0, 94%, 66%);
+
+/* Neutral */
+
+--grayish-blue: hsl(229, 8%, 60%);
+--dark-blue: hsl(229, 31%, 21%);
+}
+body {
+    font: 1.125rem / 1.5 'Rubik', sans-serif;
+  }
+btn:focus, a:focus
+{
+    outline: none;
+}
+.nav-link {
+    font-size: 1rem;
+    color:var(--dark-blue) !important;
+    letter-spacing: 0.1rem;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+.btn-cta {
+    background-color: var(--soft-red);
+    font-weight: 500 !important;
+    letter-spacing: 0.1rem;
+}
