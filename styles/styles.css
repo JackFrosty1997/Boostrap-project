@@ -23,6 +23,10 @@ body {
 .w-87 {
     width: 87%;
 }
+.py_2 {
+    padding-top:0.75rem;
+    padding-bottom:0.75rem;
+}
 .red-btn {
     background-color: var(--soft-red);
     letter-spacing: 0.1rem;
@@ -43,6 +47,9 @@ p {
 .text-spacing-3 {
     letter-spacing: 3px;
 }
+.text-spacing-n2 {
+    letter-spacing: -0.25px;
+}
 btn:focus, a:focus, .accordion-button:focus {
     outline: none;
     box-shadow: none;
@@ -51,6 +58,7 @@ btn:focus, a:focus, .accordion-button:focus {
     font-size: 1rem;
     color:var(--dark-blue) !important;
     letter-spacing: 0.1rem;
+    font-size: 0.875rem;
 }
 .nav-link:hover {
     color:var(--soft-red) !important;
@@ -69,9 +77,15 @@ btn:focus, a:focus, .accordion-button:focus {
     height: 100px;
     object-fit: contain;
 }
+.form-floating > label {
+    color:var(--grayish-blue);
+}
 @media (min-width:992px) {
     .w-lg-75 {
         width: 75% !important;
+    }
+    .w-lg-40 {
+        width: 40% !important;
     }
 }
 @media (min-width: 768px) {
@@ -85,7 +99,9 @@ btn:focus, a:focus, .accordion-button:focus {
     .w-55 {
         width:55%;
     }
-    .w-md-40 {
-        width: 40% !important;
+}
+@media (min-width:576px) {
+    .w-sm-auto {
+        width: auto !important;
     }
 }
