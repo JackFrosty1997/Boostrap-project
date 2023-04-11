@@ -14,8 +14,8 @@ body {
 }
 /* Custom Utilities */
 .content-section {
-    padding-top:5rem;
-    padding-bottom: 5rem;
+    padding-top:4rem;
+    padding-bottom:4rem;
 }
 .w-55 {
     width:100%;
@@ -27,7 +27,7 @@ body {
     background-color: var(--soft-red);
     letter-spacing: 0.1rem;
 }
-.blue-btn {
+.blue-bg {
     background-color:var(--soft-blue);
 }
 .light-btn {
@@ -40,8 +40,12 @@ p {
 .fw-medium {
     font-weight: 500 !important;
 }
-btn:focus, a:focus {
+.text-spacing-3 {
+    letter-spacing: 3px;
+}
+btn:focus, a:focus, .accordion-button:focus {
     outline: none;
+    box-shadow: none;
 }
 .nav-link {
     font-size: 1rem;
@@ -72,8 +76,8 @@ btn:focus, a:focus {
 }
 @media (min-width: 768px) {
     .content-section {
-        padding-top:7rem;
-        padding-bottom:7rem;
+        padding-top:5rem;
+        padding-bottom:5rem;
     }
     .w-md-auto {
         width: auto !important;
@@ -81,5 +85,7 @@ btn:focus, a:focus {
     .w-55 {
         width:55%;
     }
-    
+    .w-md-40 {
+        width: 40% !important;
+    }
 }
