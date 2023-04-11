@@ -20,9 +20,6 @@ body {
 .w-55 {
     width:100%;
 }
-.w-87 {
-    width: 87%;
-}
 .py_2 {
     padding-top:0.75rem;
     padding-bottom:0.75rem;
@@ -106,6 +103,9 @@ btn:focus, a:focus, .accordion-button:focus {
     }
     .w-md-auto {
         width: auto !important;
+    }
+    .w-md-87 {
+        width: 87% !important;
     }
     .w-55 {
         width:55%;
