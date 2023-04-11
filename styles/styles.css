@@ -34,15 +34,24 @@ body {
 .blue-bg {
     background-color:var(--soft-blue);
 }
+.darkblue-clr {
+    color: var(--dark-blue) !important;
+}
+.darkblue-bg {
+    background-color: var(--dark-blue);
+}
 .light-btn {
     background-color: var(--white);
     color:var(--dark-blue);
 }
-p {
+p, .grayish-clr {
     color:var(--grayish-blue);
 }
 .fw-medium {
     font-weight: 500 !important;
+}
+.text-spacing-reset {
+    letter-spacing:0 !important;
 }
 .text-spacing-3 {
     letter-spacing: 3px;
@@ -56,7 +65,6 @@ btn:focus, a:focus, .accordion-button:focus {
 }
 .nav-link {
     font-size: 1rem;
-    color:var(--dark-blue) !important;
     letter-spacing: 0.1rem;
     font-size: 0.875rem;
 }
@@ -69,6 +77,9 @@ btn:focus, a:focus, .accordion-button:focus {
 .navbar-toggler:focus {
     outline: none !important;
     box-shadow: none;
+}
+.featured_tabs {
+    width:max-content;
 }
 .featured_tabs .nav-link.active {
     border-bottom: 4px solid var(--soft-red) !important;
