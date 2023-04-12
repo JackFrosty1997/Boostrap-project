@@ -145,6 +145,9 @@ btn:focus, a:focus, .accordion-button:focus {
         width: 545px;
         height: 340px;
     }
+    .w-lg-87 {
+        width: 87% !important;
+    }
     .w-lg-75 {
         width: 75% !important;
     }
@@ -168,9 +171,6 @@ btn:focus, a:focus, .accordion-button:focus {
     }
     .w-md-auto {
         width: auto !important;
-    }
-    .w-md-87 {
-        width: 87% !important;
     }
     .w-55 {
         width:55%;
