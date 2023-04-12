@@ -155,6 +155,12 @@ btn:focus, a:focus, .accordion-button:focus {
         width: 40% !important;
     }
 }
+@media (max-width: 768px) {
+    .ovx-md {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}
 @media (min-width: 768px) {
     .content-section {
         padding-top:5rem;
