@@ -17,9 +17,6 @@ body {
     padding-top:4rem;
     padding-bottom:4rem;
 }
-.w-55 {
-    width:100%;
-}
 .py_2 {
     padding-top:0.6rem;
     padding-bottom:0.6rem;
@@ -151,6 +148,9 @@ btn:focus, a:focus, .accordion-button:focus {
     .w-lg-75 {
         width: 75% !important;
     }
+    .w-lg-55 {
+        width:55%;
+    }
     .w-lg-40 {
         width: 40% !important;
     }
@@ -171,9 +171,6 @@ btn:focus, a:focus, .accordion-button:focus {
     }
     .w-md-auto {
         width: auto !important;
-    }
-    .w-55 {
-        width:55%;
     }
 }
 @media (min-width:576px) {
