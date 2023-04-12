@@ -28,7 +28,21 @@ body {
     padding-top:0.8rem;
     padding-bottom:0.8rem;
 }
+.modal-bg {
+    background: linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.5));
+}
 /* Buttons */
+.btn-password {
+    border: 2px solid #ced4da;
+    min-width: 2.8em;
+    z-index: 3 !important;
+}
+.input-password:focus + .btn-password {
+    border-color: #86b7fe;
+}
+.btn:focus {
+    box-shadow:none;
+}
 .red-btn {
     background-color: var(--soft-red);
     letter-spacing: 0.1rem;
@@ -94,6 +108,19 @@ btn:focus, a:focus, .accordion-button:focus {
     outline: none !important;
     box-shadow: none;
 }
+/* Banner */
+.main::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 35%;
+    background: var(--soft-blue);
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    z-index: -1;
+}
 .featured_tabs {
     width:max-content;
 }
@@ -112,6 +139,12 @@ btn:focus, a:focus, .accordion-button:focus {
     transform-origin: 0 -1.5rem;
 }
 @media (min-width:992px) {
+    .main::after {
+        top: 190px;
+        right: 0;
+        width: 545px;
+        height: 340px;
+    }
     .w-lg-75 {
         width: 75% !important;
     }
@@ -146,5 +179,8 @@ btn:focus, a:focus, .accordion-button:focus {
 @media (min-width:576px) {
     .w-sm-auto {
         width: auto !important;
+    }
+    .modal-dialog {
+        max-width: 400px;
     }
 }

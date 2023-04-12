@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -31,10 +32,44 @@
                     <a href="#contact" class="nav-link darkblue-clr">Contact</a>
                 </li>
             </ul>       
-            <button class="btn btn-sm border-2 w-md-auto w-100 red-btn rounded-3 ms-lg-5 fw-medium text-white text-uppercase px-4 py_2 mt-2 mt-lg-0">Login</button> 
+            <button type="button" class="btn btn-sm border-2 w-md-auto w-100 red-btn rounded-3 ms-lg-5 fw-medium text-white text-uppercase px-4 py_2 mt-2 mt-lg-0" data-bs-toggle="modal" data-bs-target="#login">Login</button> 
+            <div class="modal fade modal-bg" id="login" tabindex="-1" aria-labelledby="Login" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header p-sm-4">
+                      <h4 class="modal-title" id="Login">Login</h4>
+                      <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-sm-4">
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label mb-1">Email address</label>
+                                <input type="email" class="form-control border-2 rounded-3 shadow-none" id="email">
+                                <a href="#" class="d-block mt-1 text-decoration-none"><small>Forgot email?</small></a>
+                            </div>
+                            <div class="mb-4">
+                                <label for="password" class="form-label mb-1">Password</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control input-password border-2 rounded-3 shadow-none" id="password" name="password" required>
+                                    <button class="btn d-none shadow-none position-absolute end-0 h-100 btn-password border-start-0" type="button" id="show-password-toggle">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                </div>
+                                <a href="#" class="d-block mt-1 text-decoration-none"><small>Forgot password?</small></a>
+                            </div>
+                            <button type="submit" class="btn btn-sm border-2 red-btn text-white fw-medium w-100 d-block text-uppercase py_3">Login</button>
+                            <div class="text-center mt-5">
+                                <small>Not a member? <a class="text-decoration-none" href="#">Signup now</a></small>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
     </nav>
+    <main class="main position-relative">
     <div class="container mt-0 mt-lg-5 pt-5">
         <div class="d-lg-flex align-items-center text-center text-lg-start">
             <div class="pb-5 pb-lg-0">
@@ -48,6 +83,7 @@
         <img class="img-fluid" src="images/illustration-hero.svg" alt="Hero Banner">
         </div>
     </div>
+    </main>
     <section id="features" class="content-section">
     <div class="container">
         <div class="w-55 m-auto text-center">
@@ -260,5 +296,36 @@
         </div>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+    const passwordInput = $('#password');
+    const showPasswordToggle = $('#show-password-toggle');
+
+    passwordInput.on('input', function() {
+      if (passwordInput.val()) {
+        showPasswordToggle.removeClass('d-none');
+      } else {
+        showPasswordToggle.addClass('d-none');
+      }
+    });
+
+    passwordInput.on('keyup', function() {
+      if (!passwordInput.val()) {
+        showPasswordToggle.addClass('d-none');
+      }
+    });
+    
+    showPasswordToggle.click(function() {
+      if (passwordInput.attr('type') === 'password') {
+        passwordInput.attr('type', 'text');
+        showPasswordToggle.html('<i class="fa-regular fa-eye-slash"></i>');
+      } else {
+        passwordInput.attr('type', 'password');
+        showPasswordToggle.html('<i class="fa-regular fa-eye"></i>');
+      }
+    });
+  });
+</script>
 </body>
 </html>
