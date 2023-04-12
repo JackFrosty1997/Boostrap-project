@@ -21,9 +21,14 @@ body {
     width:100%;
 }
 .py_2 {
-    padding-top:0.75rem;
-    padding-bottom:0.75rem;
+    padding-top:0.6rem;
+    padding-bottom:0.6rem;
 }
+.py_3 {
+    padding-top:0.8rem;
+    padding-bottom:0.8rem;
+}
+/* Buttons */
 .red-btn {
     background-color: var(--soft-red);
     letter-spacing: 0.1rem;
@@ -31,15 +36,29 @@ body {
 .blue-bg {
     background-color:var(--soft-blue);
 }
+.light-btn {
+    background-color: var(--white);
+    color:var(--dark-blue);
+}
+.red-btn:hover, .blue-bg:not(.content-section):hover, .light-btn:hover {
+    background-color:white;
+}
+.red-btn:hover {
+    color:var(--soft-red) !important;
+    border-color:var(--soft-red) !important;
+}
+.blue-bg:hover {
+    color:var(--soft-blue) !important;
+    border-color:var(--soft-blue);
+}
+.light-btn:hover {
+    border-color:var(--dark-blue);
+}
 .darkblue-clr {
     color: var(--dark-blue) !important;
 }
 .darkblue-bg {
     background-color: var(--dark-blue);
-}
-.light-btn {
-    background-color: var(--white);
-    color:var(--dark-blue);
 }
 p, .grayish-clr {
     color:var(--grayish-blue);
