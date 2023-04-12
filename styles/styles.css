@@ -104,8 +104,12 @@ btn:focus, a:focus, .accordion-button:focus {
     height: 100px;
     object-fit: contain;
 }
+.form-floating > input:focus + label {
+    color:var(--soft-blue);
+}
 .form-floating > label {
     color:var(--grayish-blue);
+    transform-origin: 0 -1.5rem;
 }
 @media (min-width:992px) {
     .w-lg-75 {
@@ -119,6 +123,15 @@ btn:focus, a:focus, .accordion-button:focus {
     .content-section {
         padding-top:5rem;
         padding-bottom:5rem;
+    }
+    .pb-10 {
+        padding-bottom: 10rem;
+    }
+    .card-2 {
+        transform:translateY(2.8rem);
+    }
+    .card-3 {
+        transform: translateY(5.6rem);
     }
     .w-md-auto {
         width: auto !important;
