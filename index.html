@@ -17,47 +17,47 @@
         <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navmenu">
+        <div id="navmenu" class="collapse navbar-collapse mt-4 mt-lg-0">
             <ul class="navbar-nav ms-auto gap-lg-4 gap-3 text-uppercase text-center text-md-start">
                 <li class="nav-item">
-                    <a href="#features" class="nav-link darkblue-clr">Features</a>
+                    <a href="#features" class="nav-link">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#download" class="nav-link darkblue-clr">Download</a>
+                    <a href="#download" class="nav-link">Download</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#faqs" class="nav-link darkblue-clr">FAQs</a>
+                    <a href="#faqs" class="nav-link">FAQs</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link darkblue-clr">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>       
-            <button type="button" class="btn btn-sm border-2 w-md-auto w-100 red-btn rounded-3 ms-lg-5 fw-medium text-white text-uppercase px-4 py_2 mt-2 mt-lg-0" data-bs-toggle="modal" data-bs-target="#login">Login</button> 
-            <div class="modal fade modal-bg" id="login" tabindex="-1" aria-labelledby="Login" aria-hidden="true">
+            <button type="button" class="btn btn-sm border-2 w-md-100 btn-red rounded-3 ms-lg-5 fw-medium text-uppercase px-4 ptb-2 mt-2 mt-lg-0" data-bs-toggle="modal" data-bs-target="#login">Login</button> 
+            <div id="login" class="modal fade modal-bg" tabindex="-1" aria-labelledby="login-heading" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header p-sm-4">
-                      <h4 class="modal-title" id="Login">Login</h4>
+                      <h4 id="login-heading"class="modal-title">Login</h4>
                       <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body p-sm-4">
                         <form>
                             <div class="mb-3">
                                 <label for="email" class="form-label mb-1">Email address</label>
-                                <input type="email" class="form-control border-2 rounded-3 shadow-none" id="email">
+                                <input id="email" type="email" class="form-control border-2 rounded-3 shadow-none">
                                 <a href="#" class="d-block mt-1 text-decoration-none"><small>Forgot email?</small></a>
                             </div>
                             <div class="mb-4">
                                 <label for="password" class="form-label mb-1">Password</label>
                                 <div class="input-group">
-                                    <input type="password" class="form-control input-password border-2 rounded-3 shadow-none" id="password" name="password" required>
-                                    <button class="btn d-none shadow-none position-absolute end-0 h-100 btn-password border-start-0" type="button" id="show-password-toggle">
+                                    <input id="password" type="password" class="form-control input-password border-2 rounded-3 shadow-none" name="password" required>
+                                    <button id="show-password-toggle" class="btn d-none shadow-none position-absolute end-0 h-100 btn-password border-start-0" type="button">
                                         <i class="fa-regular fa-eye"></i>
                                     </button>
                                 </div>
                                 <a href="#" class="d-block mt-1 text-decoration-none"><small>Forgot password?</small></a>
                             </div>
-                            <button type="submit" class="btn btn-sm border-2 red-btn text-white fw-medium w-100 d-block text-uppercase py_3">Login</button>
+                            <button type="submit" class="btn btn-sm border-2 btn-red fw-medium w-100 d-block text-uppercase ptb-3">Login</button>
                             <div class="text-center mt-5">
                                 <small>Not a member? <a class="text-decoration-none" href="#">Signup now</a></small>
                             </div>
@@ -74,10 +74,10 @@
         <div class="d-lg-flex align-items-center text-center text-lg-start">
             <div class="pb-5 pb-lg-0">
             <h1 class="fw-medium display-4 mb-4">A Simple Bookmark Manager</h1>
-            <p class="fs-5 w-lg-87 w-100 mb-5">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+            <p class="fs-5 w-lg-75 mb-5">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
             <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-column flex-md-row">
-                <a class="btn blue-bg border-2 d-block d-md-inline-block rounded-3 fw-medium text-white py_3 px-4" href="#">Get it on Chrome</a>
-                <a class="btn light-btn border-2 d-block shadow d-md-inline-block rounded-3 fw-medium py_3 px-4" href="#">Get it on Firefox</a>
+                <a class="btn btn-blue border-2 d-block d-md-inline-block rounded-3 fw-medium ptb-3 px-4" href="#">Get it on Chrome</a>
+                <a class="btn btn-light border-2 d-block shadow d-md-inline-block rounded-3 fw-medium ptb-3 px-4" href="#">Get it on Firefox</a>
             </div>      
         </div>
         <img class="img-fluid" src="images/illustration-hero.svg" alt="Hero Banner">
@@ -91,20 +91,20 @@
             <p class="fs-5 mb-5">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
         <div class="ovx-md">
-            <ul class="nav nav-tabs justify-content-center mb-md-5 featured_tabs mx-auto gap-0 gap-md-4 align-items-center align-items-md-start" id="myTab" role="tablist">
+            <ul id="tab-list" class="nav nav-tabs justify-content-center mb-md-5 featured-tabs mx-auto gap-0 gap-md-4 align-items-center align-items-md-start" role="tablist">
                 <li class="nav-item" role="presentation">
-                <button class="grayish-clr nav-link py-4 px-5 fw-medium text-spacing-reset fs-6 border-0 active" id="simple-tab" data-bs-toggle="tab" data-bs-target="#simple" type="button" role="tab" aria-controls="simple" aria-selected="true">Simple Bookmarking</button>
+                <button id="simple-tab" class="color-grayish-blue border-top-0 border-start-0 border-end-0 nav-link py-4 px-5 fw-medium fs-6 active" data-bs-toggle="tab" data-bs-target="#simple" type="button" role="tab" aria-controls="simple" aria-selected="true">Simple Bookmarking</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                <button class="grayish-clr nav-link py-4 px-5 fw-medium text-spacing-reset fs-6 border-0" id="speedy-tab" data-bs-toggle="tab" data-bs-target="#speedy" type="button" role="tab" aria-controls="speedy" aria-selected="false">Speedy Search</button>
+                <button id="speedy-tab" class="color-grayish-blue border-top-0 border-start-0 border-end-0 nav-link py-4 px-5 fw-medium fs-6" data-bs-toggle="tab" data-bs-target="#speedy" type="button" role="tab" aria-controls="speedy" aria-selected="false">Speedy Search</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                <button class="grayish-clr nav-link py-4 px-5 fw-medium text-spacing-reset fs-6 border-0" id="easy-tab" data-bs-toggle="tab" data-bs-target="#easy" type="button" role="tab" aria-controls="easy" aria-selected="false">Easy Sharing</button>
+                <button id="easy-tab" class="color-grayish-blue border-top-0 border-start-0 border-end-0 nav-link py-4 px-5 fw-medium fs-6" data-bs-toggle="tab" data-bs-target="#easy" type="button" role="tab" aria-controls="easy" aria-selected="false">Easy Sharing</button>
                 </li>
             </ul>
         </div>
-        <div class="tab-content text-center text-lg-start pt-5 pt-md-4" id="myTabContent">
-            <div class="tab-pane fade show active" id="simple" role="tabpanel" aria-labelledby="simple-tab">
+        <div id="tab-content" class="tab-content text-center text-lg-start pt-5 pt-md-4">
+            <div id="simple" class="tab-pane fade show active" role="tabpanel" aria-labelledby="simple-tab">
                 <div class="row gap-5 align-items-center flex-column flex-lg-row">
                     <div class="col px-lg-0">
                         <img class="img-fluid" src="images/illustration-features-tab-1.svg" alt="Simple Bookmarking">
@@ -112,11 +112,11 @@
                     <div class="col px-lg-0">
                         <h2 class="mb-4">Bookmark in one clicks</h2>
                         <p class="fs-5 mb-5">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                        <a class="btn blue-bg border-2 d-block d-md-inline-block rounded-3 fw-medium text-white py_3 px-4" href="#">More Info</a>
+                        <a class="btn btn-blue border-2 d-block d-md-inline-block rounded-3 fw-medium ptb-3 px-4" href="#">More Info</a>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="speedy" role="tabpanel" aria-labelledby="speedy-tab">
+            <div id="speedy" class="tab-pane fade" role="tabpanel" aria-labelledby="speedy-tab">
                 <div class="row gap-5 align-items-center flex-column flex-lg-row">
                     <div class="col px-lg-0 text-center">
                         <img class="img-fluid" src="images/illustration-features-tab-2.svg" alt="Intelligent search">
@@ -124,11 +124,11 @@
                     <div class="col px-lg-0">
                         <h2 class="mb-4">Intelligent search</h2>
                         <p class="fs-5 mb-5">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                        <a class="btn blue-bg border-2 d-block d-md-inline-block rounded-3 fw-medium text-white py_3 px-4" href="#">More Info</a>
+                        <a class="btn btn-blue border-2 d-block d-md-inline-block rounded-3 fw-medium ptb-3 px-4" href="#">More Info</a>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="easy" role="tabpanel" aria-labelledby="easy-tab">
+            <div id="easy" class="tab-pane fade" role="tabpanel" aria-labelledby="easy-tab">
                 <div class="row gap-5 align-items-center flex-column flex-lg-row">
                     <div class="col px-lg-0  text-center">
                         <img class="img-fluid" src="images/illustration-features-tab-3.svg" alt="Easy Sharing">
@@ -136,7 +136,7 @@
                     <div class="col px-lg-0">
                         <h2 class="mb-4">Share your bookmarks</h2>
                         <p class="fs-5 mb-5">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-                        <a class="btn blue-bg border-2 d-block d-md-inline-block rounded-3 fw-medium text-white py_3 px-4" href="#">More Info</a>
+                        <a class="btn btn-blue border-2 d-block d-md-inline-block rounded-3 fw-medium ptb-3 px-4" href="#">More Info</a>
                     </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@
         <h2 class="mb-4">Download the extension</h2>
         <p class="fs-5 mb-5">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
     </div>
-    <div class="card-group gap-4 w-lg-75 w-100 m-auto flex-column flex-md-row">
+    <div class="card-group gap-4 w-lg-75 m-auto flex-column flex-md-row">
         <div class="card overflow-hidden pt-5 pb-4 border-0 shadow rounded-3">
             <img src="images/logo-chrome.svg" class="d-block mb-4 w-auto dl-image" alt="Chrome">
             <div class="card-body mb-3 px-4 text-center">
@@ -158,7 +158,7 @@
             </div>
             <img src="images/bg-dots.svg" alt="Dots">
             <div class="mt-4 px-4">
-                <a href="#" class="btn border-2 blue-bg d-block rounded-3 fw-medium text-white py_3 px-4">Add &amp; Install Extension</a>
+                <a href="#" class="btn border-2 btn-blue d-block rounded-3 fw-medium ptb-3 px-4">Add &amp; Install Extension</a>
             </div>
         </div>
         <div class="card card-2 overflow-hidden pt-5 pb-4 border-0 shadow rounded-3">
@@ -169,7 +169,7 @@
             </div>
             <img src="images/bg-dots.svg" alt="Dots">
             <div class="mt-4 px-4">
-                <a href="#" class="btn border-2 blue-bg d-block rounded-3 fw-medium text-white py_3 px-4">Add &amp; Install Extension</a>
+                <a href="#" class="btn border-2 btn-blue d-block rounded-3 fw-medium ptb-3 px-4">Add &amp; Install Extension</a>
             </div>
         </div>
         <div class="card card-3 overflow-hidden pt-5 pb-4 border-0 shadow rounded-3">
@@ -180,7 +180,7 @@
             </div>
             <img src="images/bg-dots.svg" alt="Dots">
             <div class="mt-4 px-4">
-                <a href="#" class="btn border-2 blue-bg d-block rounded-3 fw-medium text-white py_3 px-4">Add &amp; Install Extension</a>
+                <a href="#" class="btn border-2 btn-blue d-block rounded-3 fw-medium ptb-3 px-4">Add &amp; Install Extension</a>
             </div>
         </div>
     </div>
@@ -192,56 +192,56 @@
             <h2 class="mb-4">Frequently Asked Questions</h2>
             <p class="fs-5 mb-5">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
         </div>
-    <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div id="accordion-flush" class="accordion accordion-flush">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <h2 id="flush-heading-one" class="accordion-header">
+            <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-one" aria-expanded="false" aria-controls="flush-collapse-one">
               What is Bookmark?
             </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div id="flush-collapse-one" class="accordion-collapse collapse" aria-labelledby="flush-heading-one" data-bs-parent="#accordion-flush">
             <div class="accordion-body">A bookmark, also known as a favorite, is a saved link to a webpage that allows you to quickly and easily access it in the future. When you bookmark a webpage, you are essentially saving its URL (Uniform Resource Locator) so that you can revisit it at any time without having to search for it again.</div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <h2 id="flush-heading-two" class="accordion-header">
+            <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-two" aria-expanded="false" aria-controls="flush-collapse-two">
               How can I request a new browser?
             </button>
           </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div id="flush-collapse-two" class="accordion-collapse collapse" aria-labelledby="flush-heading-two" data-bs-parent="#accordion-flush">
             <div class="accordion-body">If you are having issues with your current browser, or simply want to switch to a different one, you may be wondering how you can request a new browser. Fortunately, the process is generally quite straightforward.</div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <h2 id="flush-heading-three" class="accordion-header">
+            <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-three" aria-expanded="false" aria-controls="flush-collapse-three">
               Is there a mobile app?
             </button>
           </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div id="flush-collapse-three" class="accordion-collapse collapse" aria-labelledby="flush-heading-three" data-bs-parent="#accordion-flush">
             <div class="accordion-body">In today's digital age, mobile apps have become an integral part of our daily lives. From social media to e-commerce, news to entertainment, there is an app for almost everything. So, if you're wondering whether a particular website or service has a mobile app, the answer is often yes.</div>
           </div>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingFour">
-              <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            <h2 id="flush-heading-four" class="accordion-header">
+              <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-four" aria-expanded="false" aria-controls="flush-collapse-four">
                 What about other Chromium browsers?
               </button>
             </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapse-four" class="accordion-collapse collapse" aria-labelledby="flush-heading-four" data-bs-parent="#accordion-flush">
               <div class="accordion-body">
                 Google Chrome is one of the most popular web browsers in the world, and it's based on the open-source Chromium project. However, there are other Chromium-based browsers that offer unique features and customization options.</div>
             </div>
         </div>
       </div>
       <div class="text-center mt-5">
-      <a class="btn border-2 blue-bg d-block d-md-inline-block rounded-3 fw-medium text-white py_3 px-4" href="#">More Info</a>
+      <a class="btn border-2 btn-blue d-block d-md-inline-block rounded-3 fw-medium ptb-3 px-4" href="#">More Info</a>
     </div>
       </div>
     </section>
-    <section id="contact" class="blue-bg content-section">
-        <div class="container w-lg-40 w-100 m-auto ">
+    <section id="contact" class="bg-blue content-section">
+        <div class="container w-lg-40 m-auto ">
             <div class="text-center text-white">
             <small class="text-uppercase text-spacing-3">35,000+ Already joined</small>
             <h2 class="mb-5 mt-4">Stay up-to-date with what<br>we're doing</h2>
@@ -249,35 +249,35 @@
             <form class="row flex-sm-row flex-column g-3">
                 <div class="col">
                   <div class="form-floating">
-                    <input type="email" class="form-control border-0" id="floatingInputGrid" placeholder="Enter your email address" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                    <label class="border-0" for="floatingInputGrid">Enter your email address</label>
+                    <input id="floating-input-grid" type="email" class="form-control border-0" placeholder="Enter your email address" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <label class="border-0" for="floating-input-grid">Enter your email address</label>
                   </div>
                 </div>
                 <div class="col-auto">
-                    <button type="submit" class="btn border-2 red-btn text-spacing-n2 h-100 text-white rounded-3 py_3 px-4 fw-medium w-100 w-sm-auto">Contact Us</button>
+                    <button type="submit" class="btn border-2 btn-red text-spacing-n2 h-100 rounded-3 ptb-3 px-4 fw-medium w-100">Contact Us</button>
                 </div>
               </form>
         </div>
     </section>
-    <footer class="darkblue-bg">
+    <footer class="bg-dark-blue">
         <div class="container">
             <div class="d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center flex-column flex-sm-row px-0 py-5 p-md-4 gap-4 gap-lg-0">
                 <div class="col-md-auto d-flex align-items-center flex-column flex-md-row">
                   <a href="/" class="mb-3 me-md-5 mb-md-0 text-muted text-decoration-none lh-1">
                     <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="#ffffff" fill-rule="nonzero"/><g><circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5"/><path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF"/></g></g></svg>
                   </a>
-                  <ul class="nav gap-3 flex-column flex-sm-row text-center text-sm-start text-uppercase">
+                  <ul class="nav footer-nav gap-3 flex-column flex-sm-row text-center text-sm-start text-uppercase">
                       <li class="nav-item">
-                          <a href="#features" class="nav-link text-white">Features</a>
+                          <a href="#features" class="nav-link">Features</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#download" class="nav-link text-white">Download</a>
+                          <a href="#download" class="nav-link">Download</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#faqs" class="nav-link text-white">FAQs</a>
+                          <a href="#faqs" class="nav-link">FAQs</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#contact" class="nav-link text-white">Contact</a>
+                          <a href="#contact" class="nav-link">Contact</a>
                       </li>
                   </ul>
                 </div>
@@ -303,12 +303,11 @@
   $(document).ready(function() {
     const passwordInput = $('#password');
     const showPasswordToggle = $('#show-password-toggle');
+    const icon = showPasswordToggle.find('i');
 
     passwordInput.on('input', function() {
       if (passwordInput.val()) {
         showPasswordToggle.removeClass('d-none');
-      } else {
-        showPasswordToggle.addClass('d-none');
       }
     });
 
@@ -317,15 +316,12 @@
         showPasswordToggle.addClass('d-none');
       }
     });
-    
-    showPasswordToggle.click(function() {
-      if (passwordInput.attr('type') === 'password') {
-        passwordInput.attr('type', 'text');
-        showPasswordToggle.html('<i class="fa-regular fa-eye-slash"></i>');
-      } else {
-        passwordInput.attr('type', 'password');
-        showPasswordToggle.html('<i class="fa-regular fa-eye"></i>');
-      }
+
+    showPasswordToggle.click(() => {
+      const isPassword = passwordInput.attr('type') === 'password';
+      passwordInput.attr('type', isPassword ? 'text' : 'password');
+      icon.toggleClass('fa-eye-slash', isPassword);
+      icon.toggleClass('fa-eye', !isPassword);
     });
   });
 </script>

@@ -5,7 +5,6 @@
 --soft-red: hsl(0, 94%, 66%);
 
 /* Neutral */
-
 --grayish-blue: hsl(229, 8%, 60%);
 --dark-blue: hsl(229, 31%, 21%);
 }
@@ -13,15 +12,18 @@ body {
     font: 1rem / 1.5 'Rubik', sans-serif;
 }
 /* Custom Utilities */
+.w-100 {
+    width: 100%;
+}
 .content-section {
     padding-top:4rem;
     padding-bottom:4rem;
 }
-.py_2 {
+.ptb-2 {
     padding-top:0.6rem;
     padding-bottom:0.6rem;
 }
-.py_3 {
+.ptb-3 {
     padding-top:0.8rem;
     padding-bottom:0.8rem;
 }
@@ -29,56 +31,54 @@ body {
     background: linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.5));
 }
 /* Buttons */
+.input-group .btn {
+    z-index: 3;
+}
 .btn-password {
     border: 2px solid #ced4da;
     min-width: 2.8em;
-    z-index: 3 !important;
 }
 .input-password:focus + .btn-password {
     border-color: #86b7fe;
 }
-.btn:focus {
-    box-shadow:none;
-}
-.red-btn {
+.btn-red {
     background-color: var(--soft-red);
     letter-spacing: 0.1rem;
+    color:white;
 }
-.blue-bg {
+.btn-blue {
     background-color:var(--soft-blue);
+    color:white;
 }
-.light-btn {
+.btn-light {
     background-color: var(--white);
     color:var(--dark-blue);
 }
-.red-btn:hover, .blue-bg:not(.content-section):hover, .light-btn:hover {
+.btn-red:hover, .btn-blue:hover, .btn-light:hover {
     background-color:white;
 }
-.red-btn:hover {
-    color:var(--soft-red) !important;
-    border-color:var(--soft-red) !important;
+.btn-red:hover {
+    color:var(--soft-red);
+    border-color:var(--soft-red);
 }
-.blue-bg:hover {
-    color:var(--soft-blue) !important;
+.btn-blue:hover {
+    color:var(--soft-blue);
     border-color:var(--soft-blue);
 }
-.light-btn:hover {
+.btn-light:hover {
     border-color:var(--dark-blue);
 }
-.darkblue-clr {
-    color: var(--dark-blue) !important;
+.bg-blue {
+    background-color:var(--soft-blue);
 }
-.darkblue-bg {
+.bg-dark-blue {
     background-color: var(--dark-blue);
 }
-p, .grayish-clr {
+p, .color-grayish-blue {
     color:var(--grayish-blue);
 }
 .fw-medium {
-    font-weight: 500 !important;
-}
-.text-spacing-reset {
-    letter-spacing:0 !important;
+    font-weight: 500;
 }
 .text-spacing-3 {
     letter-spacing: 3px;
@@ -86,23 +86,25 @@ p, .grayish-clr {
 .text-spacing-n2 {
     letter-spacing: -0.25px;
 }
-btn:focus, a:focus, .accordion-button:focus {
+.btn:focus, a:focus, .accordion-button:focus {
     outline: none;
     box-shadow: none;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--dark-blue);
 }
 .nav-link {
     font-size: 1rem;
     letter-spacing: 0.1rem;
     font-size: 0.875rem;
 }
-.nav-link:hover {
-    color:var(--soft-red) !important;
+.navbar-light .navbar-nav .nav-link:hover, .featured-tabs .nav-link:hover, .footer-nav .nav-link:hover {
+    color:var(--soft-red);
 }
 .navbar-toggler {
     border: none;
 }
 .navbar-toggler:focus {
-    outline: none !important;
     box-shadow: none;
 }
 /* Banner */
@@ -118,11 +120,14 @@ btn:focus, a:focus, .accordion-button:focus {
     border-bottom-left-radius: 300px;
     z-index: -1;
 }
-.featured_tabs {
+.featured-tabs {
     width:max-content;
 }
-.featured_tabs .nav-link.active {
-    border-bottom: 4px solid var(--soft-red) !important;
+.featured-tabs .nav-link {
+    letter-spacing: 0;
+}
+.featured-tabs .nav-link.active {
+    border-bottom: 4px solid var(--soft-red);
 }
 .dl-image {
     height: 100px;
@@ -135,6 +140,9 @@ btn:focus, a:focus, .accordion-button:focus {
     color:var(--grayish-blue);
     transform-origin: 0 -1.5rem;
 }
+.footer-nav .nav-link {
+    color: white;   
+}
 @media (min-width:992px) {
     .main::after {
         top: 190px;
@@ -142,23 +150,23 @@ btn:focus, a:focus, .accordion-button:focus {
         width: 545px;
         height: 340px;
     }
-    .w-lg-87 {
-        width: 87% !important;
-    }
     .w-lg-75 {
-        width: 75% !important;
+        width: 75%;
     }
     .w-lg-55 {
         width:55%;
     }
     .w-lg-40 {
-        width: 40% !important;
+        width: 40%;
     }
 }
 @media (max-width: 768px) {
     .ovx-md {
         overflow-x: scroll;
         overflow-y: hidden;
+    }
+    .w-md-100 {
+        width: 100%;
     }
 }
 @media (min-width: 768px) {
@@ -175,14 +183,8 @@ btn:focus, a:focus, .accordion-button:focus {
     .card-3 {
         transform: translateY(5.6rem);
     }
-    .w-md-auto {
-        width: auto !important;
-    }
 }
 @media (min-width:576px) {
-    .w-sm-auto {
-        width: auto !important;
-    }
     .modal-dialog {
         max-width: 400px;
     }
